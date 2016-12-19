@@ -1,0 +1,39 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+    <div>Display</div>
+    <script type="text/javascript">
+        $.ajax({
+            //url: "http://evolabs.dev:8787/api/customcase/lightsey",
+            url: "https://custom.rhinoshield.io/api/customcase/lightsey",
+            method: "POST",
+            dataType: "json",
+            data: {
+                sku: "PPA0102817",
+                content: "臣亮言：先帝創業未半，而中道崩殂。....   臨表涕泣，不知所云。",
+                public: 0,
+                title: "mewmew",
+            },
+            success: function(responseData) {
+                console.log(responseData);
+            },
+            error: function(responseData) {
+                console.log(responseData);
+            }
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
